@@ -1,4 +1,5 @@
 import {
+  Alert,
   Box,
   Button,
   Container,
@@ -46,6 +47,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      {!currentPlayerURL && (
+        <Alert severity="error">Please select a channel.</Alert>
+      )}
       <Container maxWidth="xl" sx={{ marginTop: "10px" }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={8} height={"content-fit"}>
