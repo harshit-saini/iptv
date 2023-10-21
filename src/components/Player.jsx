@@ -44,8 +44,8 @@ export const Player = ({ options, onReady }) => {
   }, [playerRef]);
 
   return (
-    <div data-vjs-player className="" style={{ height: "100%", width: "100%" }}>
-      <div ref={videoRef} style={{ height: "100%", width: "100%" }} />
+    <div data-vjs-player className="">
+      <div ref={videoRef} />
     </div>
   );
 };
